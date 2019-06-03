@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const controller = require("./Controller")
+const { controller } = require("./Controller")
 
 
 app.get("/", (req, res) => {
@@ -8,11 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/usuarios", (req, res) => {
-  let usuarios = [
-    { id: "03", nombres: "david", apellido1: "gomez", apellido2: "lopez", edad: "30", sexo: "masculino", telefono: "312456382",
-    eps:"comfacor", email:"davideoeo210494@gmail.com" },
-      ];
-  res.send(usuarios);
+    controller.getUsers(res);
 });
 
 exports.app = app;
