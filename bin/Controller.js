@@ -21,9 +21,8 @@ getUsers(res){
         if(err) throw err;
         res.send(users);
 
-    })
+    });
 
 }
 }
-
-exports.controller = new controller()
+exports.controller = new controller();
