@@ -17,7 +17,7 @@ console.log("conectado a la base de datos")
     }
 }
 getUsers(res){
-    User.find({}, (err, users)=>{
+    User.find({nombres:"carlos"}, (err, users)=>{
         if(err) throw err;
         res.send(users);
 
