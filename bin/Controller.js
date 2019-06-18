@@ -20,9 +20,18 @@ getUsers(res){
     User.find({}, (err, users)=>{
         if(err) throw err;
         res.send(users);
+ } )
 
-    });
+    }
+    postUsers(req, res){
+        let usuarios = req.body.users;
+        User.create( usuarios, (err, result)=>{
+            if(err)throw err;
+            res.send({newUser:result})
+        })
+    }
 
 }
-}
+
+
 exports.controller = new controller();
