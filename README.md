@@ -3,8 +3,9 @@
 
 INTEGRANTES
 
-Carlos Mario Soto Bertel
 
 David Pérez Payares
+
+Carlos Mario Soto Bertel
 
 Cesar Augusto Lambertinez Soto
