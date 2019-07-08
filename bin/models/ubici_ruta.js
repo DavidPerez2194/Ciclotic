@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 const unionSchema = new Schema({
 
 
-  _id: {id:objectid,
+  _id: {type: Schema.Types.ObjectId,
         ref:"Bicicletas"},
- _id: {id:objectid,
+ _id: {type: Schema.Types.ObjectId,
         ref:"Rutas"}
 });
 

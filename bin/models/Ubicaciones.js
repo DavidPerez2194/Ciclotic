@@ -6,7 +6,7 @@ const ubicacionesSchema = new Schema({
   direccion: "String",
   hora_actual: "String",
   fecha_actual: "String",
-   _id: {id:objectid,
+   _id: {type: Schema.Types.ObjectId,
         ref:"Usuarios"}
 });
 

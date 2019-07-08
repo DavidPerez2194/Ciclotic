@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const User = require("./models/Usuarios")
+const reserva = require("./models/Reservas")
 
 class controller{
 constructor(){

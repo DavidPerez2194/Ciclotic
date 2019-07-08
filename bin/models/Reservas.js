@@ -6,9 +6,9 @@ const reservasSchema = new Schema({
   fecha_reserva: "String",
   hora_inicial: "String",
   hora_final: "String",
-  _id: {id:objectid,
+  id: {type: Schema.Types.ObjectId,
         ref:"Bicicletas"},
- _id: {id:objectid,
+ id_usuario: {type: Schema.Types.ObjectId,
         ref:"Usuarios"}
 });
 

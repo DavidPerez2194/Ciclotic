@@ -18,12 +18,26 @@ app.post("/usuarios", (req, res)=>{
     //res.send('OK')
 })
 
+
 app.get("/:nombre_ruta/bicicletas/:disponible", (req, res) => {
     console.log (req.params)
     res.send("Ok")
     //controller.getUsers(res);
 })
 
+app.get("/usuarios/:id", (req, res) => {
+    console.log (req.params)
+    res.send("Ok")
+})
 
+app.get("/usuarios/:id/reservas", (req, res) =>{
+    console.log (req.params)
+    res.send("Ok")
+})
+
+app.get("/usuarios/:id/ubicaciones", (req, res) => {
+    console.log (req.params)
+    res.send("ok")
+})
 
 exports.app = app;
