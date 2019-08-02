@@ -12,9 +12,21 @@ app.get("/", function(req, res) {
 app.get("/usuarios", (req, res) => {
     controller.getUsers(res);
 })
+app.get("/reservas", (req, res) => {
+    controller.getReservas(res);
+})
+app.post("/usuarioss", function(req, res){
+        let {usuarios}= req.body.usuarios;
+        controller.setUsuarios(usuarios,res);
+    });
 app.post("/usuarios", (req, res)=>{
     //console.log(req.body);
     controller.postUsers(req, res);
+    //res.send('OK')
+})
+app.post("/reservas", (req, res)=>{
+    //console.log(req.body);
+    controller.postReservas(req, res);
     //res.send('OK')
 })
 

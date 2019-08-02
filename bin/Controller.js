@@ -24,15 +24,30 @@ getUsers(res){
  } )
 
     }
-    postUsers(req, res){
-        let usuarios = req.body.users;
-        User.create( usuarios, (err, result)=>{
-            if(err)throw err;
-            res.send({newUser:result})
-        })
+
+    getReservas(res){
+    reservas.find({}, (err, reservas)=>{
+        if(err) throw err;
+        res.send(reservas);
+ } )
+
     }
 
-}
+    setReservas(reservas,res){
+        User.create(reservas, function( err, NuevoUsuario){
+            if (err) throw err;
+            res.send({estado: 200, NuevoUsuario});
+
+    })
+
+    setUsuarios(usuarios,res)
+        User.create(usuarios, function( err, NuevoUsuario){
+            if (err) throw err;
+            res.send({estado: 200, NuevoUsuario});
+
+    });
+
+}}
 
 
 exports.controller = new controller();
