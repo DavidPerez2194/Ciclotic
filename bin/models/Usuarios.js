@@ -10,8 +10,7 @@ const UserSchema = new Schema({
     telefono: "string",
     eps:"string",
     foto: "string",
-    email: "string",
-    imagen:"string"
+    email: "string"
 })
 
 var User = mongoose.model("Usuarios", UserSchema);
