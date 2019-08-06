@@ -39,15 +39,28 @@ getUsers(res){
             res.send({estado: 200, NuevoUsuario});
 
     })
+    }
 
-    setUsuarios(usuarios,res)
-        User.create(usuarios, function( err, NuevoUsuario){
+setUser(usuarios, res) {
+        // Se recibe el nuevo usuario en la variable user y se crea a partir del modelo
+        User.create(usuarios, function(err, NuevoUsuario) {
+            // sihay error se reporta
             if (err) throw err;
-            res.send({estado: 200, NuevoUsuario});
+            // se retorna la informacion con el nuevo usuario creado
+            res.send({ estado: 200, nU: NuevoUsuario });
+        });
+    }
 
-    });
-
-}}
+ setBici(bici, res) {
+        // Se recibe el nuevo usuario en la variable user y se crea a partir del modelo
+        bicicleta.create(bici, function(err, NuevaBici) {
+            // sihay error se reporta
+            if (err) throw err;
+            // se retorna la informacion con el nuevo usuario creado
+            res.send({ estado: 200, nU: NuevaBici });
+        });
+    }
+    }
 
 
 exports.controller = new controller();
