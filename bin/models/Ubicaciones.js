@@ -11,5 +11,5 @@ const ubicacionesSchema = new Schema({
 });
 
 
-var ubicacion = mongoose.model("Ubicaciones", ubicacionesSchema);
-module.exports = ubicacion;
+var Ubicaciones = mongoose.model("Ubicaciones", ubicacionesSchema);
+module.exports = Ubicaciones;
