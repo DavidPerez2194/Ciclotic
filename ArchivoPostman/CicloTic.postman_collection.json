@@ -1,0 +1,1018 @@
+{
+	"info": {
+		"_postman_id": "7c1ed140-b591-4ad6-8739-b994e90b5c90",
+		"name": "CicloTic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Obtener Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/usuarios",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						},
+						"description": " Obtenemos la lista de usuarios"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/usuarios",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "527"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20f-IgECpC7Jotv33XOqTM0XGJN0qgU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:08:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"5d4a46c962225c1484dac7d1\",\n        \"nombres\": \"Cesar Augusto\",\n        \"apellido1\": \"Texto de prueb2\",\n        \"apellido2\": \"Texto de prueb2\",\n        \"edad\": \"Texto de prueb1\",\n        \"sexo\": \"Texto de prueb1\",\n        \"telefono\": \"Texto de prueba\",\n        \"eps\": \"Texto de prueba\",\n        \"foto\": \"Texto de prueba\",\n        \"email\": \"Texto de prueba\",\n        \"createdAt\": \"2019-08-07T03:34:33.594Z\",\n        \"updatedAt\": \"2019-08-07T12:31:20.084Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5d4acd18f6edf35f0c63157d\",\n        \"nombres\": \"David\",\n        \"apellido1\": \"Perez Hello\",\n        \"createdAt\": \"2019-08-07T13:07:36.086Z\",\n        \"updatedAt\": \"2019-08-07T13:08:21.968Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Crear Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"nombres\": \"Cesar Augusto\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n\t\r\n}\r\n        "
+						},
+						"url": {
+							"raw": "{{server}}/usuarios",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						},
+						"description": "Creamos un usuario"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"nombres\": \"Cesar Augusto\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n\t\r\n}\r\n        "
+								},
+								"url": {
+									"raw": "{{server}}/usuarios",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"116-7ALkSn9QyIR1QGM9GUEm0NaPYGY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:11:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4adc150ccbea6778d6c97d\",\n    \"nombres\": \"Cesar Augusto\",\n    \"apellido1\": \"Texto de prueb2\",\n    \"apellido2\": \"Texto de prueb2\",\n    \"edad\": \"Texto de prueb1\",\n    \"sexo\": \"Texto de prueb1\",\n    \"telefono\": \"Texto de prueba\",\n    \"eps\": \"Texto de prueba\",\n    \"foto\": \"Texto de prueba\",\n    \"email\": \"email@prueba.com.co\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Actualizar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"nombres\": \"Nombre de actualizar\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n}\r\n        "
+						},
+						"url": {
+							"raw": "{{server}}/usuarios/5d4adc150ccbea6778d6c97d",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"usuarios",
+								"5d4adc150ccbea6778d6c97d"
+							]
+						},
+						"description": "Actualizamos usuario"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"nombres\": \"Cesar Augusto\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n\t\r\n}\r\n        "
+								},
+								"url": {
+									"raw": "{{server}}/usuarios",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"116-7ALkSn9QyIR1QGM9GUEm0NaPYGY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:11:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4adc150ccbea6778d6c97d\",\n    \"nombres\": \"Cesar Augusto\",\n    \"apellido1\": \"Texto de prueb2\",\n    \"apellido2\": \"Texto de prueb2\",\n    \"edad\": \"Texto de prueb1\",\n    \"sexo\": \"Texto de prueb1\",\n    \"telefono\": \"Texto de prueba\",\n    \"eps\": \"Texto de prueba\",\n    \"foto\": \"Texto de prueba\",\n    \"email\": \"email@prueba.com.co\"\n}"
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"nombres\": \"Nombre de actualizar\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n}\r\n        "
+								},
+								"url": {
+									"raw": "{{server}}/usuarios/5d4adc150ccbea6778d6c97d",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios",
+										"5d4adc150ccbea6778d6c97d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "371"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"173-IXGK99YvyWkGpEhaM8Mx9lthEok\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:14:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4adc150ccbea6778d6c97d\",\n    \"nombres\": \"Nombre de actualizar\",\n    \"apellido1\": \"Texto de prueb2\",\n    \"apellido2\": \"Texto de prueb2\",\n    \"edad\": \"Texto de prueb1\",\n    \"sexo\": \"Texto de prueb1\",\n    \"telefono\": \"Texto de prueba\",\n    \"eps\": \"Texto de prueba\",\n    \"foto\": \"Texto de prueba\",\n    \"email\": \"email@prueba.com.co\",\n    \"createdAt\": \"2019-08-07T14:11:33.086Z\",\n    \"updatedAt\": \"2019-08-07T14:14:40.025Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Borrar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{server}}/usuarios/5d4adc150ccbea6778d6c97d",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"usuarios",
+								"5d4adc150ccbea6778d6c97d"
+							]
+						},
+						"description": "Borramos un usuario"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"nombres\": \"Cesar Augusto\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n\t\r\n}\r\n        "
+								},
+								"url": {
+									"raw": "{{server}}/usuarios",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"116-7ALkSn9QyIR1QGM9GUEm0NaPYGY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:11:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4adc150ccbea6778d6c97d\",\n    \"nombres\": \"Cesar Augusto\",\n    \"apellido1\": \"Texto de prueb2\",\n    \"apellido2\": \"Texto de prueb2\",\n    \"edad\": \"Texto de prueb1\",\n    \"sexo\": \"Texto de prueb1\",\n    \"telefono\": \"Texto de prueba\",\n    \"eps\": \"Texto de prueba\",\n    \"foto\": \"Texto de prueba\",\n    \"email\": \"email@prueba.com.co\"\n}"
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{server}}/usuarios/5d4adc150ccbea6778d6c97d",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios",
+										"5d4adc150ccbea6778d6c97d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "371"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"173-IXGK99YvyWkGpEhaM8Mx9lthEok\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:15:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4adc150ccbea6778d6c97d\",\n    \"nombres\": \"Nombre de actualizar\",\n    \"apellido1\": \"Texto de prueb2\",\n    \"apellido2\": \"Texto de prueb2\",\n    \"edad\": \"Texto de prueb1\",\n    \"sexo\": \"Texto de prueb1\",\n    \"telefono\": \"Texto de prueba\",\n    \"eps\": \"Texto de prueba\",\n    \"foto\": \"Texto de prueba\",\n    \"email\": \"email@prueba.com.co\",\n    \"createdAt\": \"2019-08-07T14:11:33.086Z\",\n    \"updatedAt\": \"2019-08-07T14:14:40.025Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"nombres\": \"Nombre de actualizar\",\r\n    \"apellido1\": \"Texto de prueb2\",\r\n    \"apellido2\": \"Texto de prueb2\",\r\n    \"edad\": \"Texto de prueb1\",\r\n    \"sexo\": \"Texto de prueb1\",\r\n    \"telefono\": \"Texto de prueba\",\r\n    \"eps\": \"Texto de prueba\",\r\n    \"foto\": \"Texto de prueba\",\r\n    \"email\": \"email@prueba.com.co\"\r\n}\r\n        "
+								},
+								"url": {
+									"raw": "{{server}}/usuarios/5d4adc150ccbea6778d6c97d",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"usuarios",
+										"5d4adc150ccbea6778d6c97d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "371"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"173-IXGK99YvyWkGpEhaM8Mx9lthEok\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:14:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4adc150ccbea6778d6c97d\",\n    \"nombres\": \"Nombre de actualizar\",\n    \"apellido1\": \"Texto de prueb2\",\n    \"apellido2\": \"Texto de prueb2\",\n    \"edad\": \"Texto de prueb1\",\n    \"sexo\": \"Texto de prueb1\",\n    \"telefono\": \"Texto de prueba\",\n    \"eps\": \"Texto de prueba\",\n    \"foto\": \"Texto de prueba\",\n    \"email\": \"email@prueba.com.co\",\n    \"createdAt\": \"2019-08-07T14:11:33.086Z\",\n    \"updatedAt\": \"2019-08-07T14:14:40.025Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Puntos",
+			"item": [
+				{
+					"name": "Obtener Puntos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/puntos",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"puntos"
+							]
+						},
+						"description": " Obtenemos la lista de usuarios"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/puntos",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"puntos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "364"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16c-bifV482pUZiGBG3DoF6RFHzbFyY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:18:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"5d4acd94f6edf35f0c63157e\",\n        \"direccion\": \"Calle 29 con circunvalar\",\n        \"createdAt\": \"2019-08-07T13:09:40.361Z\",\n        \"updatedAt\": \"2019-08-07T13:11:25.394Z\",\n        \"__v\": 0,\n        \"nombre\": \"Sena\"\n    },\n    {\n        \"_id\": \"5d4ace4df6edf35f0c631580\",\n        \"nombre\": \"Villa Olimpica\",\n        \"direccion\": \"Por la circunvalar con 50\",\n        \"createdAt\": \"2019-08-07T13:12:45.878Z\",\n        \"updatedAt\": \"2019-08-07T13:12:45.878Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Crear Punto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"nombre\": \"Sena\",\r\n\t\"direccion\": \"Calle circunvalar\"\r\n}\r\n        "
+						},
+						"url": {
+							"raw": "{{server}}/puntos",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"puntos"
+							]
+						},
+						"description": "Creamos un usuario"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"nombre\": \"Sena\",\r\n\t\"direccion\": \"Calle circunvalar\"\r\n}\r\n        "
+								},
+								"url": {
+									"raw": "{{server}}/puntos",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"puntos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "82"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"52-jLYDN9jowhPwO0daIJLbL6+17DY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:19:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4addf90ccbea6778d6c97f\",\n    \"nombre\": \"Sena\",\n    \"direccion\": \"Calle circunvalar\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Actualizar Punto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Sena\",\r\n    \"direccion\": \"Calle circunvalar con 29\"\r\n}"
+						},
+						"url": {
+							"raw": "{{server}}/puntos/5d4addf90ccbea6778d6c97f",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"puntos",
+								"5d4addf90ccbea6778d6c97f"
+							]
+						},
+						"description": "Actualizamos usuario"
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Sena\",\r\n    \"direccion\": \"Calle circunvalar con 29\"\r\n}"
+								},
+								"url": {
+									"raw": "{{server}}/puntos/5d4addf90ccbea6778d6c97f",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"puntos",
+										"5d4addf90ccbea6778d6c97f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "175"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"af-LP+gflt774t7+zg+pvKSiwpohoc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:20:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4addf90ccbea6778d6c97f\",\n    \"nombre\": \"Sena\",\n    \"direccion\": \"Calle circunvalar con 29\",\n    \"createdAt\": \"2019-08-07T14:19:37.483Z\",\n    \"updatedAt\": \"2019-08-07T14:20:40.015Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Borrar Punto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{server}}/puntos/5d4addf90ccbea6778d6c97f",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"puntos",
+								"5d4addf90ccbea6778d6c97f"
+							]
+						},
+						"description": "Borramos un usuario"
+					},
+					"response": [
+						{
+							"name": "Borrar Punto",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{server}}/puntos/5d4addf90ccbea6778d6c97f",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"puntos",
+										"5d4addf90ccbea6778d6c97f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "175"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"af-LP+gflt774t7+zg+pvKSiwpohoc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Aug 2019 14:21:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5d4addf90ccbea6778d6c97f\",\n    \"nombre\": \"Sena\",\n    \"direccion\": \"Calle circunvalar con 29\",\n    \"createdAt\": \"2019-08-07T14:19:37.483Z\",\n    \"updatedAt\": \"2019-08-07T14:20:40.015Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bicicletas",
+			"item": [
+				{
+					"name": "Obtener Bicicletas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/bicicletas",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"bicicletas"
+							]
+						},
+						"description": " Obtenemos la lista de usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Bicicletas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"marca\": \"prueba 3\",\r\n\t\"color\": \"prueba\",\r\n\t\"Nromarco\": \"prueba\",\r\n\t\"punto\": \"5d4ace4df6edf35f0c631580\"\r\n}"
+						},
+						"url": {
+							"raw": "{{server}}/bicicletas",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"bicicletas"
+							]
+						},
+						"description": "Creamos un usuario"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Bicicletas",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marca\": \"bici 3\",\r\n    \"color\": \"prueba\",\r\n    \"Nromarco\": \"prueba\",\r\n    \"punto\": \"5d4ace4df6edf35f0c631580\"\r\n}"
+						},
+						"url": {
+							"raw": "{{server}}/bicicletas/5d4ae07b792c202c54c1b105",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"bicicletas",
+								"5d4ae07b792c202c54c1b105"
+							]
+						},
+						"description": "Actualizamos usuario"
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Bicicleta",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{server}}/bicicletas/5d4ae07b792c202c54c1b105",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"bicicletas",
+								"5d4ae07b792c202c54c1b105"
+							]
+						},
+						"description": "Borramos un usuario"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
