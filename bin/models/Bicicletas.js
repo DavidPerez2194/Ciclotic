@@ -2,12 +2,17 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bicicletasSchema = new Schema({
-
-    codigo_bici: "String",
-    marca: "String",
-    color: "String",
-    Nromarco: "string",
-    disponible: "string"
+    marca: String,
+    color: String,
+    Nromarco: String,
+    punto: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Punto'
+    },
+    usuario: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Usuarios'
+    },
 });
 
 
